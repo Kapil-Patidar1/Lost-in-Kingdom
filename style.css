@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid yellow; */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: white;
+}
+
+                            /* Background */
+
+.bg{
+    height: 100vh;
+    background-image:url(./assets/bg.jpg);
+    /* background: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+   height: 100px;
+}
+
+                            /* Navigation */
+
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 50px;
+}
+
+nav button{
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    border: 1px solid #6b6d7a;
+    border-radius: 25px;
+    cursor: pointer;
+}
+nav button:last-child{
+    background-color: #CF506B;
+}
+
+.nav-1{
+    display: flex;
+    align-items: center;
+}
+
+.nav-2{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-3{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-4{
+    display: none ;
+}
+
+                            /* Hero Section */
+
+.hero{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    /* position: relative; */
+}
+
+.h-text{
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 390px;
+}
+            
+.h-text h1 img{
+    height: 50px;
+    width: 150px;
+    align-items: center;
+}
+
+.h-text h1{
+    font-size: 65px;
+}
+
+.h-text h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.h-img{
+    width: 50%;
+    height: 75vh;
+}
+
+.h-text div{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    padding: 10px;
+    padding-block: 30px;
+}
+
+.h-text button{
+    height: 60px;
+    width: 170px;
+    font-size: 20px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    border: 1px solid #6b6d7a;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.h-text button:first-child{
+    background-color: #CF506B;
+    
+}
+
+.h-text img{
+    height: 70px;
+    width: 420px;
+}
+
+                /* Logo */
+
+.h-img img:first-child{
+    height: 90px;
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+}
+
+.h-img img:last-child{
+    height: 90px;
+    position: absolute;
+    right: 30px;
+    bottom: 170px;
+}
+
+
+@media (max-width:768px){
+    
+    .nav-2{
+        display: none;
+    }
+
+    .nav-3{
+        display: none;
+    }
+
+    .nav-4{
+        display: block;
+    }
+
+    .nav-4 i{
+        font-size: 18px;
+    }
+
+    .h-text{
+        width: 70%;
+    }
+}
